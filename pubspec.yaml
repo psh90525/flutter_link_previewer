@@ -6,15 +6,19 @@ description: >
 version: 3.2.1
 homepage: https://flyer.chat
 repository: https://github.com/flyerhq/flutter_link_previewer
+publish_to: "none"
 
 environment:
-  sdk: '>=2.19.0 <4.0.0'
-  flutter: '>=3.0.0'
+  sdk: ">=2.19.0 <4.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_chat_types: ^3.6.1
+  flutter_chat_types:
+    git:
+      url: https://github.com/psh90525/flutter_chat_types.git
+      ref: main
   flutter_linkify: ^6.0.0
   html: ^0.15.3
   http: ^0.13.6
